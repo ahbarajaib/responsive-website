@@ -1,0 +1,242 @@
+/* Default Banner Styles */
+.banner {
+    display: block;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Default Body Styling (Mobile-first) */
+body {
+    font-family: 'Dubai', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Home Tab Specific Banner */
+body.home-tab-active .banner {
+    background-image: url('assets/banner.jpeg');
+    background-color: transparent;
+    color: white;
+}
+
+/* Default color for the burger icon */
+#burger-icon {
+    color: white !important;
+}
+
+/* Black color for the burger icon for other tabs */
+.burger-icon-black {
+    color: black !important;
+}
+
+/* Non-Home Tabs Styling */
+body:not(.home-tab-active) .banner {
+    display: none;
+}
+
+/* Mobile Default Styles */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Fixed Header */
+.fixed-top {
+    z-index: 1030;
+    height: 72px;
+}
+
+/* Header after scrolling */
+.header-scrolled {
+    background-color: white !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar below header */
+.navbar-below-header {
+    margin-top: 72px;
+}
+
+/* NavBar Brand */
+.navbar-brand img {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    object-fit: contain;
+    margin-top: 5px;
+}
+
+.nav-item {
+    font-weight: 600;
+}
+
+/* Sidebar styling */
+#sidebar {
+    z-index: 1040;
+    width: 250px;
+    left: -250px;
+    transition: left 0.3s;
+}
+
+/* Navbar link color */
+.navbar .nav-link {
+    color: white !important;
+}
+
+/* Black text for non-home tabs */
+.navbar-black-text .nav-link {
+    color: black !important;
+}
+
+/* Transparent Input Styles */
+.transparent-input {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #000;
+}
+
+.transparent-input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+}
+
+.transparent-input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+/* Search form center */
+.search-form {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Making Dubai Section */
+.making-dubai-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.making-dubai-section .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.making-dubai-section .card-text {
+    color: #555;
+}
+
+.making-dubai-section .card-link {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.making-dubai-section .card-link:hover {
+    text-decoration: underline;
+}
+
+/* Mobile and Tablet Styles */
+.icon-left {
+    margin-right: 10px;
+}
+
+.making-dubai-section .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: left;
+    padding: 15px;
+}
+
+.making-dubai-section .card-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.making-dubai-section .card-text {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.making-dubai-section .icon-left {
+    font-size: 1.25rem;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.making-dubai-section .btn-primary {
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+/* Footer Padding */
+#main-footer {
+    padding: 40px 0;
+}
+
+/* Icon sizes */
+.footer-icon-apps i,
+.footer-icon-social-media i {
+    font-size: 2rem;
+}
+
+.footer__section p {
+    font-size: 14px;
+}
+
+/* Mobile Layout */
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .footer__section {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .footer-icon-apps,
+    .footer-icon-social-media {
+        justify-content: center;
+    }
+}
+
+/* Tablet Layout */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 720px;
+        padding: 0 20px;
+    }
+
+    .footer__section {
+        flex: 1 1 48%;
+    }
+
+    .footer__section p {
+        font-size: 15px;
+    }
+}
+
+/* Desktop Layout */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1140px;
+        padding: 0 30px;
+    }
+
+    .footer__section {
+        flex: 1 1 23%;
+    }
+
+    .footer__section p {
+        font-size: 16px;
+    }
+}

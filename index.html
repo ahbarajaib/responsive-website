@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai Municipality</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/dubai" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="main-body" style="min-height: 100vh;">
+    <!-- Banner Section -->
+    <section class="banner vh-100 d-flex flex-column text-white text-center position-relative">
+        <div class="position-absolute w-100 h-100 bg-dark opacity-50" id="home-overlay"></div>
+
+        <!-- Header -->
+        <header class="fixed-top w-100">
+            <div class="container">
+                <div class="d-flex justify-content-between py-2 px-3">
+                    <a href="#" class="navbar-brand d-none d-lg-block">
+                        <img src="assets/govt-of-dubai.png" alt="Government of Dubai Logo" class="img-fluid">
+                    </a>
+                    <a href="#" class="navbar-brand mx-auto d-lg-none">
+                        <img src="assets/dubai-muncipality.png" alt="Dubai Municipality Logo" class="img-fluid">
+                    </a>
+                    <a href="#" class="navbar-brand d-none d-lg-block">
+                        <img src="assets/dubai-muncipality.png" alt="Dubai Municipality Logo" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navbar (Tab Navigation) -->
+        <nav class="navbar navbar-expand-lg navbar-dark container navbar-below-header">
+            <div class="d-flex justify-content-between w-100">
+                <button id="burger-icon" class="btn text-white me-3"><i class="fa-solid fa-bars"></i></button>
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div class="navbar-collapse collapse justify-content-start">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="about-tab" href="#about">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="services-tab" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="payment-tab" href="#payment">Easy
+                                    Payment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="data-tab" href="#data">Open Data</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" href="#contact">Contact
+                                    Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex align-items-center ms-auto">
+                        <div id="search-input" class="input-group mb-0 d-lg-none" style="display: none;">
+                            <input type="text" class="form-control transparent-input border-0 rounded-pill"
+                                placeholder="Search" />
+                        </div>
+                        <button id="search-icon" class="btn text-white d-lg-none ms-2" type="button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <div class="input-group mb-0 d-none d-lg-flex">
+                            <span class="input-group-text transparent-input border-0 rounded-pill rounded-end-0">
+                                <i class="fa-solid fa-magnifying-glass text-white"></i>
+                            </span>
+                            <input type="text"
+                                class="form-control transparent-input border-0 rounded-pill rounded-start-0"
+                                placeholder="Search" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Tab Content -->
+        <div class="tab-content container mt-5">
+            <!-- Home Tab -->
+            <div class="tab-pane fade show active" id="home">
+                <div class="container text-center z-1 position-relative" style="padding-top: 100px;">
+                    <p class="fs-2">Making Dubai More <span class="display-1 d-block fw-bold">Livable</span> Every Day
+                    </p>
+                    <form class="search-form mx-auto">
+                        <div class="input-group">
+                            <span class="input-group-text bg-white text-black border-0 px-3 py-3"><i
+                                    class="fas fa-microphone"></i></span>
+                            <input type="text" class="form-control border-0 px-3 py-3"
+                                placeholder="Search Services, News, Information, Circulars..." />
+                            <span class="input-group-text bg-white text-black border-0 px-3 py-3"><i
+                                    class="fas fa-search"></i></span>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+
+
+            <!-- About Us Tab -->
+            <div class="tab-pane fade" id="about">
+                <div class="container text-center py-5 text-black">
+                    <h2 class="fw-bold mb-4">About Us</h2>
+                    <p class="fs-5">
+                        Dubai Municipality is committed to enhancing the quality of life for all its citizens, visitors,
+                        and residents.
+                        With a vision to create a sustainable and livable city, we work tirelessly to provide essential
+                        services,
+                        advance infrastructure projects, and maintain the city's green spaces.
+                    </p>
+                    <p class="fs-5">
+                        Our mission is to lead the way in creating a world-class city by delivering innovative,
+                        effective, and
+                        customer-centric solutions that contribute to the well-being of the community.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Services Tab -->
+            <div class="tab-pane fade" id="services">
+                <div class="container text-center py-5 text-black">
+                    <h2 class="fw-bold mb-4">Our Services</h2>
+                    <p class="fs-5">
+                        At Dubai Municipality, we offer a wide range of services designed to support and improve the
+                        everyday
+                        lives of residents, businesses, and visitors. From waste management to urban planning, our
+                        services
+                        ensure a clean, sustainable, and well-maintained city.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <h5 class="fw-bold">Waste Management</h5>
+                            <p>Comprehensive waste collection and recycling programs to keep the city clean and
+                                environmentally
+                                friendly.</p>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <h5 class="fw-bold">Public Parks</h5>
+                            <p>Beautifully maintained parks and green spaces for families and individuals to enjoy
+                                outdoor
+                                activities.</p>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <h5 class="fw-bold">Building Permits</h5>
+                            <p>Efficient processing and management of building permits and regulations to support urban
+                                development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Easy Payment Tab -->
+            <div class="tab-pane fade" id="payment">
+                <div class="container text-center py-5 text-black">
+                    <h2 class="fw-bold mb-4">Easy Payment Solutions</h2>
+                    <p class="fs-5">
+                        We make paying for municipal services quick and convenient with our multiple payment options.
+                        Choose from our secure online platforms or visit one of our service centers across Dubai.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <h5 class="fw-bold">Online Payments</h5>
+                            <p>Pay your bills and fines easily through our secure online portal, available 24/7 for your
+                                convenience.</p>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <h5 class="fw-bold">Service Centers</h5>
+                            <p>Visit our service centers across the city for in-person assistance with your payments and
+                                other
+                                inquiries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Open Data Tab -->
+            <div class="tab-pane fade" id="data">
+                <div class="container text-center py-5 text-black">
+                    <h2 class="fw-bold mb-4">Open Data</h2>
+                    <p class="fs-5">
+                        Dubai Municipality is committed to transparency and providing access to valuable data. Our Open
+                        Data
+                        initiative promotes research, innovation, and development by sharing public data resources.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <h5 class="fw-bold">City Statistics</h5>
+                            <p>Access detailed statistics about population, infrastructure, and public services.</p>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <h5 class="fw-bold">Environmental Reports</h5>
+                            <p>Explore data on air quality, waste management, and sustainability efforts.</p>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <h5 class="fw-bold">Urban Development Plans</h5>
+                            <p>Review future plans for urban development, including zoning and infrastructure projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact us Tab -->
+            <div class="tab-pane fade" id="contact">
+                <div class="container text-center py-5 text-black">
+                    <h2 class="fw-bold mb-4">Contact Us</h2>
+                    <p class="fs-5">
+                        We are here to assist you. Reach out to us for inquiries, support, or feedback. Our dedicated
+                        team is
+                        always ready to help.
+                    </p>
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h5 class="fw-bold">Customer Service</h5>
+                            <p>Email: <a
+                                    href="mailto:customerservice@dubaimunicipality.ae">customerservice@dubaimunicipality.ae</a>
+                            </p>
+                            <p>Phone: +971 800 900</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="fw-bold">Office Address</h5>
+                            <p>Dubai Municipality Headquarters, Al Rigga, Deira, Dubai, UAE</p>
+                            <p>Opening Hours: 8:00 AM - 4:00 PM (Sunday to Thursday)</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h5 class="fw-bold">Social Media</h5>
+                        <p>Follow us on:</p>
+                        <a href="#" class="me-3"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="bg-white text-black position-fixed top-0 h-100"
+        style="width: 250px; left: -250px; transition: left 0.3s;">
+        <button class="btn btn-close btn-close-black position-absolute top-0 end-0 m-3" id="close-sidebar"></button>
+        <div class="p-4">
+            <!-- Links for Desktop and Larger Screens (d-none for mobile) -->
+            <div class="d-none d-lg-block">
+                <p><a href="#home" class="text-dark nav-link">Home</a></p>
+                <p><a href="#about" class="text-dark nav-link">About Us</a></p>
+                <p><a href="#services" class="text-dark nav-link">Services</a></p>
+                <p><a href="#payment" class="text-dark nav-link">Easy Payment</a></p>
+                <p><a href="#data" class="text-dark nav-link">Open Data</a></p>
+                <p><a href="#contact" class="text-dark nav-link">Contact Us</a></p>
+                <p><a href="#item1" class="text-dark nav-link">Item 1</a></p>
+                <p><a href="#item2" class="text-dark nav-link">Item 2</a></p>
+                <p><a href="#item3" class="text-dark nav-link">Item 3</a></p>
+            </div>
+
+            <!-- Links for Mobile and Smaller Screens (d-lg-none for desktop) -->
+            <div class="d-lg-none">
+                <p><a href="#home" class="text-dark nav-link">Home</a></p>
+                <p><a href="#about" class="text-dark nav-link">About Us</a></p>
+                <p><a href="#services" class="text-dark nav-link">Services</a></p>
+                <p><a href="#payment" class="text-dark nav-link">Easy Payment</a></p>
+                <p><a href="#data" class="text-dark nav-link">Open Data</a></p>
+                <p><a href="#contact" class="text-dark nav-link">Contact Us</a></p>
+                <p><a href="#item1" class="text-dark nav-link">Item 1</a></p>
+                <p><a href="#item2" class="text-dark nav-link">Item 2</a></p>
+                <p><a href="#item3" class="text-dark nav-link">Item 3</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="homeContent">
+
+
+        <!-- Making Dubai More Every Day Section -->
+        <section class="making-dubai-section text-center py-5 bg-light">
+            <h2 class="fw-bold">Making Dubai More Every Day.</h2>
+            <p class="text-muted mb-5">The Dubai Municipality Impact Pillars Define Our Commitment To The City And Its
+                People.</p>
+
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6">
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fas fa-paint-brush icon-left"></i>
+                                        <h5 class="card-title">Beautiful</h5>
+                                        <p class="card-text">Designing beautiful spaces to enrich lives.</p>
+                                        <a href="#" class="card-link">Learn More ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fas fa-chart-line icon-left"></i>
+                                        <h5 class="card-title">Livable</h5>
+                                        <p class="card-text">Empowering growth and a thriving economy.</p>
+                                        <a href="#" class="card-link">Learn More ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fas fa-rocket icon-left"></i>
+                                        <h5 class="card-title">Pioneering</h5>
+                                        <p class="card-text">Shaping tomorrow, today: Our Smart City journey.</p>
+                                        <a href="#" class="card-link">Learn More ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="card-body">
+                                        <i class="fas fa-leaf icon-left"></i>
+                                        <h5 class="card-title">Sustainable</h5>
+                                        <p class="card-text">Nurturing tomorrow: our commitment to sustainability.</p>
+                                        <a href="#" class="card-link">Learn More ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second column with one large image -->
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <img src="assets/deira.jpg" class="card-img-top" alt="Large Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Empowering Dubai's Future</h5>
+                                <p class="card-text">A visual representation of our journey toward a smarter,
+                                    sustainable Dubai.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-dark text-white py-4">
+        <div class="container">
+            <!-- Quick Links Section -->
+            <div class="row mb-4">
+                <div class="col-12 col-md-3">
+                    <p><strong>Quick Links</strong></p>
+                    <ul class="list-unstyled">
+                        <li><a href="#" aria-label="FAQ" class="text-white">FAQ</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer nofollow" aria-label="Careers"
+                                class="text-white">Careers</a></li>
+                        <li><a href="#" aria-label="Sitemap" class="text-white">Sitemap</a></li>
+                        <li><a href="#" aria-label="Contact Us" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Website T&Cs Section -->
+                <div class="col-12 col-md-3">
+                    <p><strong>Website T&Cs</strong></p>
+                    <ul class="list-unstyled">
+                        <li><a href="#" aria-label="Accessibility" class="text-white">Accessibility</a></li>
+                        <li><a href="#" aria-label="Terms &amp; Conditions" class="text-white">Terms &amp;
+                                Conditions</a></li>
+                        <li><a href="#" aria-label="Security &amp; Privacy" class="text-white">Security &amp;
+                                Privacy</a></li>
+                    </ul>
+                </div>
+                <!-- Download App Section -->
+                <div class="col-12 col-md-3">
+                    <p><strong>Download App</strong></p>
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li class="mx-2"><a href="#" target="_blank" rel="noopener noreferrer nofollow"
+                                aria-label="Android App" class="text-white"><i class="fab fa-android fa-2x"></i></a>
+                        </li>
+                        <li class="mx-2"><a href="#" target="_blank" rel="noopener noreferrer nofollow"
+                                aria-label="iOS App" class="text-white"><i class="fab fa-apple fa-2x"></i></a></li>
+                    </ul>
+                </div>
+                <!-- Social Media Section -->
+                <div class="col-12 col-md-3">
+                    <p><strong>Social Media</strong></p>
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li class="mx-2"><a href="#" target="_blank" rel="noopener noreferrer nofollow"
+                                aria-label="Facebook" class="text-white"><i class="fab fa-facebook fa-2x"></i></a></li>
+                        <li class="mx-2"><a href="#" target="_blank" rel="noopener noreferrer nofollow"
+                                aria-label="Twitter" class="text-white"><i class="fab fa-twitter fa-2x"></i></a></li>
+                        <li class="mx-2"><a href="#" target="_blank" rel="noopener noreferrer nofollow"
+                                aria-label="YouTube" class="text-white"><i class="fab fa-youtube fa-2x"></i></a></li>
+                        <li class="mx-2"><a href="#" target="_blank" rel="noopener noreferrer nofollow"
+                                aria-label="Instagram" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Copyright Section -->
+            <div class="row">
+                <div class="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <p>Copyright © 2024 Dubai Municipality, all rights reserved.</p>
+                    <p>This site is maintained by the Dubai Municipality.</p>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <p>The site is best viewed using Microsoft Edge, Mozilla Firefox, Safari, and Chrome.</p>
+                    <p>Page last modified: <span id="dynamicDate">06 November 2024</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap 5 JavaScript Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
